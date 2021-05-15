@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="trovare.main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="#" />
+    <title>Trovare</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <head>  
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>  
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    
+</head>
+    <header>
+        <div class="title">
+            <a href="index.aspx">
+                <h1><i class="fa fa-ravelry" aria-hidden="true"></i>
+                    Trovare</h1>
+                <p>illuminate your destination</p>
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg float-right ">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse back navbar-collapse" id="collapsibleNavbar" style="
+    line-height: 5px;
+    padding: 5px;">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.aspx">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.aspx#travel">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<%if(Session["uname"]!=null)
+                                                                   {
+                                                                       Response.Write("#contact");
+                                                                       
+                                                                   }
+                                                                     else{
+                                                                       Response.Write("Login.aspx");
+                                                                   }
+                                                                     %>"><%if(Session["uname"]!=null)
+                                                                     Response.Write("Contact");
+                                                                   else{
+                                                                       Response.Write("Login");
+                                                                   }
+                                                                     %>
+                        </a>
+                    &nbsp;</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<%if(Session["uname"]!=null)
+                                                                   {
+                                                                       Response.Write("profile.aspx");
+                                                                       
+                                                                   }
+                                                                     else{
+                                                                       Response.Write("register.aspx");
+                                                                   }
+                                                                     %>"><%if(Session["uname"]!=null)
+                                                                   {
+                                                                       Response.Write(Session["uname"]);
+                                                                       
+                                                                   }
+                                                                     else{
+                                                                       Response.Write("Register");
+                                                                   }
+                                                                     %></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <footer id="contact">
+        <div>
+            <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+            <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+            <p>&COPY; KFS Univeristy, 2020-2021</p>
+        </div>
+    </footer>
+    <!--Scripts part (bootstrap,jQuery,js) -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    </form>
+</body>
+</html>

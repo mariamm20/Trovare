@@ -1,0 +1,291 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Header style */
+header{
+    background-image: url("../img/7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 578px;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    padding:4% ;
+}
+.title
+{
+    position: absolute;
+    top: 245px;
+    width: 300px;
+}
+.title a
+{
+    color: #fff;
+    text-decoration: none;
+}
+.title h1
+{
+    font-size: 44px;
+}
+.title p
+{
+    position: relative;
+    left: 70px;
+    width: 200px;
+    margin: 0;
+}
+    .navbar
+{
+    color: #fff;
+    position: relative;
+    top: 228px;
+    padding: 0;
+   
+    
+}
+
+.navbar li
+{
+    padding: 10px;
+    font-size: 22px;
+}
+.navbar li a 
+{
+    color: #fff;
+}
+.fa-bars
+{
+    color: #fff;
+}
+.flex-column  
+{
+    flex-direction: row !important;
+}
+.navbar li:hover
+{
+    border-bottom: 2px solid #fff;
+    
+}
+
+/* end of header style */
+
+/* section Two */
+.about
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 70px 70px 70px;
+}
+.about h2
+{
+    line-height: 2em;
+}
+.about p
+{
+    line-height: 2em;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.about a
+{
+    color: #fff;
+    margin-top: 18px;
+}
+.about i 
+{
+    background-color: #000;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+/*section travel*/
+
+.travel
+{
+    background-color: #f4c618;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.co div
+{
+    padding: 55px;
+    background-color: #000;
+    font-size: 18px;
+    line-height: 1.6em;
+    box-shadow: 1px 1px 3px rgb(58, 58, 58),-1px -1px 3px rgb(36, 36, 36);
+}
+
+.co
+{
+    display: flex;
+    justify-content: space-around;
+}
+.what
+{
+    position: relative;
+    top: 60px;
+    margin-bottom: 85px;
+}
+.what h2
+{
+    line-height: 3.5em;
+}
+.what a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.what a div:hover
+{
+    box-shadow: 3px 3px 3px rgb(58, 58, 58),-3px -3px 3px rgb(36, 36, 36) ;
+}
+.benefits div
+{
+    margin-top: 20px;
+}
+.benefits div p
+{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.benefits div:hover
+{
+    color: #f4c618;
+}
+footer div
+{
+    text-align: center;
+    background-image: url("../img/7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:30px ;
+    color: #fff;
+}
+footer div i
+{
+    padding: 10px;
+
+    cursor: pointer;
+}
+footer div i:hover
+{
+    opacity: 0.7;
+}
+
+
+
+
+/*resposive First section*/
+@media (min-width: 1200px)
+{
+    
+
+
+}
+
+@media (min-width: 992px)
+{
+    .title
+{
+    top: 425px;
+}
+.navbar
+{
+    top: 390px;
+    background-color: rgba(0, 0 , 0 , 0.3);
+}
+
+}
+
+@media (min-width: 607px) and (max-width: 991.99px)
+{
+
+     header
+    {
+        height: 395px;
+        
+    }
+    nav div
+{
+    position: relative;
+    top: 28px;
+    width: 230px;
+    background-color:rgba(0, 0 , 0 , 0.5)
+}
+.navbar li 
+{
+    padding: 5px;
+    font-size: 17px;
+}
+
+}
+
+@media (max-width: 606.99px)
+{
+    .navbar
+{
+    top: 240px;
+}
+header
+    {
+        height: 395px;
+        
+    }
+    nav div
+{
+    position: relative;
+    top: 28px;
+    width: 300px;
+    background-color:rgba(0, 0 , 0 , 0.5)
+}
+nav ul 
+{
+    flex-direction: row;
+}
+.navbar li 
+{
+    padding: 5px;
+    font-size: 17px;
+}
+
+}
+
+@media (max-width:400px)
+{
+    .co div
+{
+    padding: 40px;
+    
+}
+.travel img
+{
+    width: 320px;
+    height: 320px;
+}
+.what h2
+{
+    line-height: 1.5em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+

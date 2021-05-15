@@ -1,0 +1,90 @@
+body
+{
+    background-image: url("/img/7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    
+}
+div
+{
+    text-align: center;
+    width:500px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    
+
+}
+div input
+{
+    width: 80%;
+    padding: 10px;
+    margin: 15px;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+div button
+{
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    background-color: #000;
+    color: #f4c618;
+}
+.Button2:hover
+{
+    background-color: #f4c618;
+    color: black;
+}
+#Label1
+{
+    font-size:20px;
+    color:green;
+}
+div h3
+{
+    padding-top:185px;
+}
+
+div p a
+{
+    color: #000;
+    text-decoration: underline;
+}
+div p a:hover
+{
+    color: #f4c618;
+    
+}
+.home
+{
+    text-decoration: none;
+}
+.home:hover
+{
+    text-decoration: none;
+}
+
+
+@media (min-width: 607px) and (max-width: 991.99px)
+{
+    
+    div
+    {position: relative;}
+
+}
+@media (max-width: 606.99px)
+{
+    div
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+    
+}
+
+
+

@@ -1,0 +1,118 @@
+.countries
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    
+}
+.countries div
+{
+    box-shadow: 2px 2px 4px #000 ;
+}
+.countries a
+{
+    text-decoration: none;
+    color: #000;
+}
+.countries div:hover
+{
+    box-shadow: -3px -3px 4px #ccc,3px 3px 4px #000 ;
+    color: rgba(0, 0, 0, 0.7);
+}
+.countries img
+{
+    width: 250px;
+    height: 150px;
+}
+.countries p
+{
+    padding: 10px;
+    line-height: 2em;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.select
+{
+    padding: 5%;
+    text-align: center;
+    border-bottom:1px solid #000 ;
+}
+.select h3
+{
+    margin-bottom: 50px;
+}
+.details 
+{
+    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.details p
+{
+    
+    text-align: justify;
+    
+}
+.hello
+{
+    width: 45%;
+    margin-left: 50px;
+}
+.details img
+{
+    width: 400px;
+    height: 350px;
+    box-shadow: 3px 3px 4px #000,-3px -3px 4px #ccc;
+}
+.hello h4
+{
+    padding: 18px 0;
+}
+.hello a
+{
+    color: #000;
+    text-decoration: underline;
+    
+}
+.hello a:hover
+{
+    color:#f4c618;
+}
+.just
+{
+    margin-right: 20px;
+}
+
+@media (min-width: 607px) and (max-width: 992px)
+{
+    .hello
+    {
+        margin-left: 0;
+        width: 400px;
+        padding-right:20px ;
+    }
+    .hello h4 {
+    padding: 7px 0;
+}
+
+}
+
+@media (max-width: 606.99px)
+{
+    .hello
+    {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
